@@ -35,7 +35,12 @@ const LandingPage = () => {
           Comfie
         </Heading>
         <HStack gap="80px">
-          <Text fontSize="20px">Vancouver, BC</Text>
+          <HStack>
+            <CiLocationOn size="23px" color="blue" />
+            <Text fontSize="20px" pl="5px">
+              Vancouver, BC
+            </Text>
+          </HStack>
           <Text fontSize="20px">Explore</Text>
           <Text fontSize="20px">Top Cities</Text>
           <Text fontSize="20px">Blog</Text>
@@ -43,11 +48,15 @@ const LandingPage = () => {
         </HStack>
 
         <HStack gap={5}>
-          <Text fontSize="20px">Sign in</Text>
+          <Text fontSize="20px" color="blue.500">
+            Sign in
+          </Text>
           <Button
             fontSize="20px"
             bgColor="inherit"
             borderWidth="1px"
+            height="50px"
+            backgroundColor="blue.500"
             leftIcon={<HiOutlineBriefcase size="25px" />}
           >
             <Text ml="10px"> Add Business</Text>
@@ -73,13 +82,14 @@ const LandingPage = () => {
             align="center"
             justify="center"
             height="100px"
+            borderRadius="15px"
           >
             <Stack direction="row" width="37%" height="60px">
               <Divider orientation="vertical" />
               <Stack pl="20px">
                 <HStack>
-                  <CiLocationOn />
-                  <Text>Location</Text>
+                  <CiLocationOn color="blue" size="18px" />
+                  <Text pl="5px">Location</Text>
                 </HStack>
                 <Text>Where do you wanna go?</Text>
               </Stack>
@@ -88,8 +98,8 @@ const LandingPage = () => {
               <Divider orientation="vertical" />
               <Stack pl="20px">
                 <HStack>
-                  <BsPeople />
-                  <Text>People</Text>
+                  <BsPeople color="blue" size="18px" />
+                  <Text pl="5px">People</Text>
                 </HStack>
                 <Text>How many people?</Text>
               </Stack>
@@ -98,8 +108,8 @@ const LandingPage = () => {
               <Divider orientation="vertical" />
               <Stack pl="20px">
                 <HStack>
-                  <BsCalendarDate />
-                  <Text>Date</Text>
+                  <BsCalendarDate color="blue" size="18px" />
+                  <Text pl="5px">Date</Text>
                 </HStack>
                 <Text>When do you want to go there?</Text>
               </Stack>
@@ -126,23 +136,23 @@ const LandingPage = () => {
 
         <Stack direction="row" gap={3}>
           <Stack>
-            <Card width="250px" height="310px" bgColor="blue">
-              <Img src="/images/london.jpeg" />
-            </Card>
-            <Card width="250px" height="200px" bgColor="red">
-              <Img src="/images/london.jpeg" />
-            </Card>
+            <Box width="250px" height="320px">
+              <Img src="/images/tour3.jpg" />
+            </Box>
+            <Box width="250px" height="200px">
+              <Img src="/images/vancouver2.jpg" />
+            </Box>
           </Stack>
         </Stack>
 
         <Stack>
-          <Card bgColor="green" width="300px" height="500px" mt="100px">
-            <Img src="/images/london.jpeg" />
+          <Card bgColor="blue.500" width="300px" height="500px" mt="100px">
+            <Img src="/images/vancouver3.jpg" />
           </Card>
         </Stack>
       </Stack>
 
-      <Stack mt="20px">
+      <Stack mt="20px" mb="100px">
         <Heading fontSize="3xl">Choose by Category:</Heading>
         <Stack direction="row" pt="50px" gap={5}>
           <Card
