@@ -2,9 +2,6 @@ import Layout from "@/layouts";
 import {
   Box,
   Button,
-  Card,
-  CardBody,
-  CardHeader,
   Heading,
   Img,
   Stack,
@@ -264,7 +261,7 @@ const HomeContainer = () => {
             <Heading fontSize="4xl" pb="20px" width="80%">
               2022 Travel Trends - what you need to know
             </Heading>
-            <Text fontSize="3xl">
+            <Text fontSize="3xl" width="85%">
               2022 taught us valuable life lessons. Plans do not always work
               out, flexibility in life is key, a...
             </Text>
@@ -283,7 +280,7 @@ const HomeContainer = () => {
             <Heading fontSize="4xl" pb="20px" width="80%">
               The Ultimate Guide to Hiking in Iceland{" "}
             </Heading>
-            <Text fontSize="3xl">
+            <Text fontSize="3xl" width="85%">
               Whether you are an avid hiker or you consider yourself to be more
               hike-curious, there is no...
             </Text>
@@ -303,32 +300,73 @@ const HomeContainer = () => {
         </Button>
       </Stack>
 
-      <Box
+      <Stack
         pl="100px"
         pr="100px"
         mt="50px"
         pt="70px"
         pb="70px"
         bgImage="/images/bgmotif.jpeg"
+        flexDirection="row"
       >
-        <Heading size="xl" lineHeight="60px">
-          What our travellers are saying
-        </Heading>
-        <Heading size="xl" lineHeight="60px">
-          "Excellent! Enjoy the whole ride from the site to biking through some
-          of the piazza restaurants. Saw some hidden gems in rome."{" "}
-        </Heading>
-        <HStack>
-          <Text>Mira Philips </Text>
-          <Text>(Rome Bike Tour) </Text>
-        </HStack>
-        <HStack>
-          <Img boxSize="30px" />
-          <Img boxSize="30px" />
-        </HStack>
-      </Box>
+        <Stack direction="column" width="60%">
+          <Heading size="3xl" lineHeight="70px" width="80%">
+            What our travellers are saying
+          </Heading>
+          <Heading
+            pt="40px"
+            size="xl"
+            lineHeight="60px"
+            color="gray.600"
+            width="100%"
+          >
+            "Excellent! Enjoy the whole ride from the site to biking through
+            some of the piazza restaurants. Saw some hidden gems in rome."{" "}
+          </Heading>
+          <HStack pt="20px">
+            <Text fontSize="3xl"> - Mira Philips </Text>
+            <Text fontSize="3xl" color="gray.600">
+              (Rome Bike Tour){" "}
+            </Text>
+          </HStack>
+          <HStack pt="40px" gap={5}>
+            <Img boxSize="60px" bgColor="blue.300" borderRadius="30px" />
+            <Img boxSize="60px" bgColor="blue.300" borderRadius="30px" />
+          </HStack>
+        </Stack>
+        <Box width="40%" height="600px" bgColor="blue.400"></Box>
+      </Stack>
 
-      <Stack></Stack>
+      <Stack pt="100px" align="center">
+        <Heading size="3xl" textAlign="center" width="60%">
+          Your journey starts here{" "}
+        </Heading>
+        <Text pt="30px" pb="30px" fontSize="20px">
+          Stay up to date with the latest information from us{" "}
+        </Text>
+
+        <Stack width="full" align="center" pb="100px" direction="row">
+          <Button
+            width="60%"
+            height="60px"
+            bgColor="gray.300"
+            borderRadius="30px"
+            fontSize="20px"
+          >
+            Enter your mail
+          </Button>
+          <Button
+            alignSelf="right"
+            width="20%"
+            height="50px"
+            bgColor="blue.300"
+            borderRadius="30px"
+            fontSize="20px"
+          >
+            Join our newsletter
+          </Button>
+        </Stack>
+      </Stack>
     </Box>
   );
 };
