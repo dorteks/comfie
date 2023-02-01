@@ -126,23 +126,23 @@ const LandingPage = () => {
 
         <Stack direction="row" gap={3}>
           <Stack>
-            <Card width="250px" height="310px" bgColor="blue">
-              <Img src="/images/london.jpeg" />
-            </Card>
-            <Card width="250px" height="200px" bgColor="red">
-              <Img src="/images/london.jpeg" />
-            </Card>
+            <Box width="250px" height="320px">
+              <Img src="/images/tour3.jpg" />
+            </Box>
+            <Box width="250px" height="200px">
+              <Img src="/images/tour3.jpg" />
+            </Box>
           </Stack>
         </Stack>
 
         <Stack>
           <Card bgColor="green" width="300px" height="500px" mt="100px">
-            <Img src="/images/london.jpeg" />
+            <Img src="/images/tour4.jpg" />
           </Card>
         </Stack>
       </Stack>
 
-      <Stack mt="20px">
+      <Stack mt="20px" mb="100px">
         <Heading fontSize="3xl">Choose by Category:</Heading>
         <Stack direction="row" pt="50px" gap={5}>
           <Card
