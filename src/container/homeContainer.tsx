@@ -320,8 +320,8 @@ const HomeContainer = () => {
             color="gray.600"
             width="100%"
           >
-            "Excellent! Enjoy the whole ride from the site to biking through
-            some of the piazza restaurants. Saw some hidden gems in rome."{" "}
+            Excellent, Enjoy the whole ride from the site to biking through some
+            of the piazza restaurants. Saw some hidden gems in rome.{" "}
           </Heading>
           <HStack pt="20px">
             <Text fontSize="3xl"> - Mira Philips </Text>
