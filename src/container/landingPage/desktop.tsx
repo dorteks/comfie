@@ -22,19 +22,28 @@ import { HiOutlineTicket } from "react-icons/hi";
 import { CiLocationOn } from "react-icons/ci";
 import { BsCalendarDate, BsPeople } from "react-icons/bs";
 
-const LandingPage = () => {
+const DesktopLandingPage = () => {
   return (
-    <Box pl="100px" pr="100px" pt="30px">
+    <Box
+      pr={["0px", "0px", "0px", "20px", "90px"]}
+      pl={["0px", "0px", "0px", "20px", "90px"]}
+      pt="30px"
+    >
+      {/* top component */}
       <Stack
         height="80px"
         align="center"
         direction="row"
         justify="space-between"
+        display={["none", "none", "none", "flex", "flex"]}
       >
-        <Heading fontSize="4xl" fontStyle="oblique">
+        <Heading
+          fontSize={["0px", "0px", "0px", "3xl", "4xl"]}
+          fontStyle="oblique"
+        >
           Comfie
         </Heading>
-        <HStack gap="80px">
+        <HStack gap={["0px", "0px", "0px", "20px", "50px"]}>
           <HStack>
             <CiLocationOn size="23px" color="blue" />
             <Text fontSize="20px" pl="5px">
@@ -47,7 +56,7 @@ const LandingPage = () => {
           <Text fontSize="20px">Help</Text>
         </HStack>
 
-        <HStack gap={5}>
+        <HStack gap={[0, 0, 0, 2, 5]}>
           <Text fontSize="20px" color="blue.500">
             Sign in
           </Text>
@@ -59,100 +68,135 @@ const LandingPage = () => {
             backgroundColor="blue.500"
             leftIcon={<HiOutlineBriefcase size="25px" />}
           >
-            <Text ml="10px"> Add Business</Text>
+            <Text ml="10px">Add Business</Text>
           </Button>
         </HStack>
       </Stack>
 
-      <Stack direction="row" mt="40px" pt="30px" justify="space-evenly">
-        <Stack width="60%">
-          <Heading size="2xl">Welcome to</Heading>
-          <Heading size="4xl" pt="10px" color="blue.500">
+      {/* middle component */}
+
+      <Stack
+        direction="row"
+        mt="40px"
+        pt="30px"
+        justify={["none", "none", "none", "space-between", "space-evenly"]}
+        display={["none", "none", "none", "flex", "flex"]}
+      >
+        <Stack width={["0", "0", "0", "45%", "60%"]}>
+          <Heading size={["0", "0", "0", "xl", "2xl"]}>Welcome to</Heading>
+          <Heading
+            size={["0", "0", "0", "2xl", "4xl"]}
+            pt="10px"
+            color="blue.500"
+          >
             Vancouver
           </Heading>
-          <Text width="95%" pb="50px" fontSize="xl" pt="30px">
+          <Text width={["0", "0", "0", "100%", "95%"]} fontSize="xl" pt="30px">
             Easily find places to: Stay, Eat, Shop or Visit from our Partners or
             Local businesses.
           </Text>
 
-          <Card
-            mt="20px"
-            direction="row"
-            width="115%"
-            align="center"
-            justify="center"
-            height="100px"
-            borderRadius="15px"
-          >
-            <Stack direction="row" width="37%" height="60px">
-              <Divider orientation="vertical" />
-              <Stack pl="20px">
-                <HStack>
-                  <CiLocationOn color="blue" size="18px" />
-                  <Text pl="5px">Location</Text>
-                </HStack>
-                <Text>Where do you wanna go?</Text>
-              </Stack>
-            </Stack>
-            <Stack direction="row" width="38%" height="60px">
-              <Divider orientation="vertical" />
-              <Stack pl="20px">
-                <HStack>
-                  <BsPeople color="blue" size="18px" />
-                  <Text pl="5px">People</Text>
-                </HStack>
-                <Text>How many people?</Text>
-              </Stack>
-            </Stack>
-            <Stack direction="row" width="45%" height="60px">
-              <Divider orientation="vertical" />
-              <Stack pl="20px">
-                <HStack>
-                  <BsCalendarDate color="blue" size="18px" />
-                  <Text pl="5px">Date</Text>
-                </HStack>
-                <Text>When do you want to go there?</Text>
-              </Stack>
-            </Stack>
-
-            <Button
-              width="20%"
+          <Box pt="65px">
+            <Card
+              direction="row"
+              width={["0", "0", "0", "155%", "115%"]}
+              align="center"
+              justify="center"
+              height={["0", "0", "0", "120px", "100px"]}
               borderRadius="15px"
-              bgColor="blue.500"
-              ml="30px"
-              mr="20px"
             >
-              Explore Now
-            </Button>
-          </Card>
+              <Stack direction="row" width="37%" height="60px">
+                <Divider orientation="vertical" />
+                <Stack pl="20px">
+                  <HStack>
+                    <CiLocationOn color="blue" size="18px" />
+                    <Text pl="5px">Location</Text>
+                  </HStack>
+                  <Text>Where do you wanna go?</Text>
+                </Stack>
+              </Stack>
+              <Stack direction="row" width="38%" height="60px">
+                <Divider orientation="vertical" />
+                <Stack pl="20px">
+                  <HStack>
+                    <BsPeople color="blue" size="18px" />
+                    <Text pl="5px">People</Text>
+                  </HStack>
+                  <Text>How many people?</Text>
+                </Stack>
+              </Stack>
+              <Stack direction="row" width="45%" height="60px">
+                <Divider orientation="vertical" />
+                <Stack pl="20px">
+                  <HStack>
+                    <BsCalendarDate color="blue" size="18px" />
+                    <Text pl="5px">Date</Text>
+                  </HStack>
+                  <Text>When do you want to go there?</Text>
+                </Stack>
+              </Stack>
 
-          <HStack pt="40px" pb="30px">
+              <Button
+                width={["0", "0", "0", "30%", "25%"]}
+                borderRadius="15px"
+                bgColor="blue.500"
+                ml={["0px", "0px", "0px", "20px", "50px"]}
+                mr="20px"
+              >
+                Explore Now
+              </Button>
+            </Card>
+          </Box>
+
+          <Stack
+            direction={["column", "column", "column", "column", "row"]}
+            pt="40px"
+            pb="30px"
+          >
             <Text fontSize="20px">Popular Searches: </Text>
             <Text color="gray.600" fontSize="20px">
               Hiking, Starbucks, Fishing, Hotels{" "}
             </Text>
-          </HStack>
-        </Stack>
-
-        <Stack direction="row" gap={3}>
-          <Stack>
-            <Box width="250px" height="320px">
-              <Img src="/images/tour3.jpg" />
-            </Box>
-            <Box width="250px" height="200px">
-              <Img src="/images/vancouver2.jpg" />
-            </Box>
           </Stack>
         </Stack>
 
-        <Stack>
-          <Card bgColor="blue.500" width="300px" height="500px" mt="100px">
-            <Img src="/images/vancouver3.jpg" />
-          </Card>
-        </Stack>
+        <HStack>
+          <Stack direction="row" gap={3}>
+            <Stack>
+              <Box
+                width={["0px", "0px", "0px", "220px", "250px"]}
+                height={["0px", "0px", "0px", "290px", "320px"]}
+              >
+                <Img src="/images/tour3.jpg" />
+              </Box>
+              <Box
+                width={["0px", "0px", "0px", "220px", "250px"]}
+                height="200px"
+              >
+                <Img src="/images/vancouver2.jpg" />
+              </Box>
+            </Stack>
+          </Stack>
+
+          <Stack>
+            <Card
+              bgColor="blue.500"
+              width={["0px", "0px", "0px", "250px", "300px"]}
+              height="500px"
+              mt="100px"
+            >
+              <Img src="/images/vancouver3.jpg" />
+            </Card>
+          </Stack>
+        </HStack>
       </Stack>
 
-      <Stack mt="20px" mb="100px">
+      {/* buttom component */}
+      <Stack
+        mt="20px"
+        mb="100px"
+        display={["none", "none", "none", "flex", "flex"]}
+      >
         <Heading fontSize="3xl">Choose by Category:</Heading>
         <Stack direction="row" pt="50px" gap={5}>
           <Card
@@ -241,4 +285,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default DesktopLandingPage;

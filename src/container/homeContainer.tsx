@@ -250,8 +250,8 @@ const HomeContainer = () => {
       <Stack pt="70px" direction="row" justify="space-between">
         <Box width="50%">
           <Stack>
-            <Box width="full" height="auto" bgColor="blue.400">
-              <Img src="/images/hiking.jpeg" />
+            <Box width="full" height="300px" bgColor="blue.400">
+              <Img src="/images/newtour.jpg" />
             </Box>
           </Stack>
           <Stack mt="30px" mb="40px">
